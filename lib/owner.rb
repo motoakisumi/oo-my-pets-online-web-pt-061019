@@ -62,6 +62,8 @@ class Owner
   def sell_pets
     cat = self.cats.select{|cat| cat.mood = "nervous" }
     dog = self.dogs.select{|dog| dog.mood = "nervous" }
+    cat.owner = []
+    dog.owner = []
     [cat, dog]
   end
 end
