@@ -59,7 +59,7 @@ class Owner
     pets = self.dogs + self.cats
     pets.each |pet|
       pet.mood = "nervous"
-      pet.owner = "nil"
+      pet.owner = nil
     end
   end
 end
