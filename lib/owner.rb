@@ -67,6 +67,4 @@ class Owner
       pet.owner = "nil"
     end
   end
-
-  end
 end
