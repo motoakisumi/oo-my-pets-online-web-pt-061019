@@ -1,14 +1,14 @@
 class Dog
 
-  attr_accessor :cats
+  attr_accessor :owner
 
   @@all = []
 
   def initialize(name, owner)
     @name = name
-    @owner = Owner.new(owner)
+    @owner = owner
     @@all << self
-    @cats =[]
+
   end
 
   def name
@@ -43,8 +43,5 @@ class Dog
     @@all = []
   end
 
-  def buy_cat(name)
-    cat = Cat.new(name)
-    cats << cat
-  end
+
 end
