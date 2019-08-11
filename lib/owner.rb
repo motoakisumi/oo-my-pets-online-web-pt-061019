@@ -5,8 +5,6 @@ class Owner
   def initialize(name)
     @name = name
     @@all << self
-    @cats =[]
-    @dogs =[]
   end
 
   def name
