@@ -1,11 +1,14 @@
 class Dog
 
+  attr_accessor :cats
+
   @@all = []
 
   def initialize(name, owner)
     @name = name
     @owner = Owner.new(owner)
     @@all << self
+    @cats =[]
   end
 
   def name
@@ -33,6 +36,15 @@ class Dog
   end
 
   def self.all
-    @@all.select{|dog| dog.name}
+    @@all
+  end
+
+  def self.reset_all
+    @@all = []
+  end
+
+  def buy_cat(name)
+    cat = Cat.new(name)
+    cats << cat
   end
 end

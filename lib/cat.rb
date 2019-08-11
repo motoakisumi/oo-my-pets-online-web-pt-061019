@@ -34,9 +34,16 @@ class Cat
   end
 
   def self.all
-    @@all.select{|cat| cat.name}
+    @@all
   end
 
-  @@all = []
+  def self.count
+    @@all.size
+  end
+
+  def self.reset_all
+    @@all = []
+  end
+
 
 end
