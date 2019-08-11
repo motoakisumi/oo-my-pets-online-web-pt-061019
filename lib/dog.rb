@@ -16,10 +16,6 @@ class Dog
   end
 
 
-  def owner=(owner)
-    @owner = Owner.new(owner)
-  end
-
   def mood=(mood)
     @mood = mood
   end
