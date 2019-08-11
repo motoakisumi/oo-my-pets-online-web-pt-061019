@@ -37,4 +37,6 @@ class Cat
     @@all.select{|cat| cat.name}
   end
 
+  @@all = []
+
 end
