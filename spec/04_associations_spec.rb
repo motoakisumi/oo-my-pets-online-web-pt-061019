@@ -3,9 +3,6 @@ require_relative 'spec_helper.rb'
 describe "Associations" do
   before do
     @owner = Owner.new("Timmy")
-    Cat.reset_all
-    Dog.reset_all
-
   end
 
   after do
@@ -39,14 +36,7 @@ describe "Associations" do
       end
     end
     describe "#buy_cat" do
-      before do
-        Cat.reset_all
-      end
 
-      after do
-        Cat.reset_all
-      end
-      
       it 'can buy a cat that is an instance of the Cat class' do
         expect(@owner.cats.count).to eq(0)
 
