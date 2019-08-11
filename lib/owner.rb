@@ -1,6 +1,5 @@
 class Owner
 
-  attr_accessor :cats
   @@all = []
 
   def initialize(name)
@@ -26,19 +25,19 @@ class Owner
   end
 
   def self.count
-    @@all.size
+    self.all.count
   end
 
   def self.reset_all
-    @@all = []
+    self.all.clear
   end
 
   def cats
-    Cat.all
+    Cat.all.select{|cat| cat.owner == self}
   end
 
   def dogs
-    Dog.all
+    Dog.all.select{|dog| dog.owner == self}
   end
 
   def buy_cat(name)
