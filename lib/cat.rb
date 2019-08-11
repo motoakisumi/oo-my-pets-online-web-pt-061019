@@ -20,11 +20,8 @@ class Cat
   end
 
   def mood
-    if @mood == nil
-      "nervous"
-    else
-      @mood
-    end
+    @mood
+
   end
 
   def self.all
