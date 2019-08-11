@@ -8,6 +8,7 @@ class Dog
     @name = name
     @owner = owner
     @@all << self
+    @mood = "nervous"
 
   end
 
