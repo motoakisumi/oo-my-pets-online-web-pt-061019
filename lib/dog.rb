@@ -15,9 +15,6 @@ class Dog
     @name
   end
 
-  def owner
-    @owner.name
-  end
 
   def owner=(owner)
     @owner = Owner.new(owner)
