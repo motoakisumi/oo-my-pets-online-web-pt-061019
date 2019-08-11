@@ -25,7 +25,6 @@ class Dog
     @mood
   end
 
-
   def self.all
     @@all
   end
