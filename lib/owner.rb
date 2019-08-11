@@ -6,6 +6,7 @@ class Owner
     @name = name
     @@all << self
     @cats =[]
+    @dogs =[]
   end
 
   def name
@@ -44,4 +45,7 @@ class Owner
     cats << Cat.new(name, self)
     cats
   end
+
+  def buy_dog(name)
+
 end
